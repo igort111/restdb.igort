@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>admin page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>R-code marketplace</h1>
+        <nav>
+            <a href="index.html" class="products-link">products</a>
+        </nav>
+    </header>
+    <main>
+        <div class="admin_grid">
+            <div class="add_product">
+            <form id="add_product_form">
+                <div class="form-group">
+                    <label>name:</label><input type="text" class="form-control" name="name" required>
+                </div>
+
+                <div class="form-group">
+                    <label>description:</label><textarea type="text" class="form-control" name="desc"></textarea>
+                </div>
+                <div class="form-group">
+                    <label>price:</label><input type="text" class="form-control" name="price" data-type="money" required>
+                </div>
+                <div class="form-group">
+                    <label>photo url:</label><input type="text" class="form-control" name="photo"  >
+                </div>
+                <div class="form-group">
+                    <label>author id:</label><input type="text" class="form-control" name="author_id">
+                </div>
+                <input type="submit">
+            </form>
+        </div>
+        <div id="admin_page_orders">
+            
+        </div>
+    </div>
+        
+    </main>
+</body>
+<script src="admin.js"></script>
+</html>
